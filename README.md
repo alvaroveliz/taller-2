@@ -3,7 +3,9 @@
 Autor: joseluis184@gmail.com
 
 Compartir sucesos de mi embarazo
+
 Posibilidad de subir fotos
+
 POsibilidad de Geolocalizar
 
 
