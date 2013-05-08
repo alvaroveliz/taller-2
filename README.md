@@ -1,4 +1,3 @@
-taller-2
-========
-
-Taller 2 HTML5
+# taller 2
+## Proyecto A
+Autor: joseluis184@gmail.com
