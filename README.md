@@ -16,7 +16,7 @@ Los contenidos de las clases se describen a continuación:
   * Responsive
   * Mobile First
 
-*** Objetivo de la clase *** : Definir el objetivo de nuestra aplicación
+** Objetivo de la clase ** : Definir el objetivo de nuestra aplicación
     
 ---
 
@@ -28,7 +28,7 @@ Los contenidos de las clases se describen a continuación:
     * Custom data attributes
     * Drag and Drop
     
-*** Objetivo de la clase *** : Crear Wireframes
+** Objetivo de la clase ** : Crear Wireframes
 
 ---
 
@@ -37,7 +37,7 @@ Los contenidos de las clases se describen a continuación:
     * Geolocation
     * History
     
-*** Objetivo de la clase *** : Aplicar Geolocation ó History
+** Objetivo de la clase ** : Aplicar Geolocation ó History
 
 ---
 
@@ -46,7 +46,7 @@ Los contenidos de las clases se describen a continuación:
     * localStorage
     * webSockets
 
-*** Objetivo de la clase *** : Guardar datos con localStorage
+** Objetivo de la clase ** : Guardar datos con localStorage
 
 ---
 
@@ -55,7 +55,7 @@ Los contenidos de las clases se describen a continuación:
   * ¿Qué es un Polyfill?
   * Modernizr
 
-*** Objetivo de la clse *** : Finalizando nuestra aplicación
+** Objetivo de la clse ** : Finalizando nuestra aplicación
 
 ----
   
