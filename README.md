@@ -3,10 +3,13 @@
 Autor: joseluis184@gmail.com
 
 Compartir sucesos de mi embarazo
+	localStorage
 
 Posibilidad de subir fotos
+	Drag and Drop
 
-POsibilidad de Geolocalizar
+Posibilidad de Geolocalizar
+	Geolocation	
 
 
 
