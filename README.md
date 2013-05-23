@@ -1,4 +1,4 @@
-# Mi embarazo día a día
+# EmbarazApp
 ## Compartir eventos de mi embarazo
 Autor: joseluis184@gmail.com
 
