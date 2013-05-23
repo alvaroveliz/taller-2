@@ -18,6 +18,14 @@ header h1#logo {
   font-size: 1.2em;
 }
 
+#map-canvas {
+  height: 480px;
+}
+
+#map-canvas img {
+  max-width: none;
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 }
