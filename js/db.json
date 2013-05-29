@@ -1,0 +1,67 @@
+var db = {
+    "version" : "1.0",
+    "restaurantes"  : [
+        {
+            "name" : "Los Chinos Ricos",
+            "type" : "SB",
+            "address" : {
+                "calle" : "Avenida Brasil 373",
+                "comuna" : "Santiago Centro",
+                "geolocation" : {
+                    "latitude" : -33.44043,
+                    "longitude" : -70.664847
+                },
+            "phone" : "2 - 6963778"
+            }
+        },
+        {
+            "name" : "Cruz Verde #1",
+            "type" : "CV",
+            "address" : {
+                "line1" : "Mall Plaza Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.46528,
+                    "longitude" : -70.597808
+                }
+            }
+        },
+        {
+            "name" : "Salco Brand #1",
+            "type" : "SB",
+            "address" : {
+                "line1" : "",
+                "line2" : "",
+                "geolocation" : {
+                    "latitude" : 0.0,
+                    "longitude" : 0.0
+                }
+            }
+        },
+        {
+            "name" : "Ahumada #2",
+            "type" : "AH",
+            "address" : {
+                "line1" : "",
+                "line2" : "",
+                "geolocation" : {
+                    "latitude" : 0.0,
+                    "longitude" : 0.0
+                }
+            }
+        },
+        {
+            "name" : "Salco Brand #2",
+            "type" : "SB",
+            "address" : {
+                "line1" : "",
+                "line2" : "",
+                "geolocation" : {
+                    "latitude" : 0.0,
+                    "longitude" : 0.0
+                }
+            }
+        }
+    ],
+    "hospitales" : [
+    ]
+}

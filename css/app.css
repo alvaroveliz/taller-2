@@ -1,6 +1,4 @@
 /* By default, mobile */
-body {
-}
 
 .container-narrow {
   margin: 2%;
@@ -17,34 +15,6 @@ header h1#logo {
 #holder p.lead {
   font-size: 1.2em;
 }
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
-}
-
-/* Large desktop */
-@media (min-width: 1200px) { 
-  .container-narrow {
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 20px;
-  }  
-}
-
-@media print {
-  html, body {
-    height: auto;
-  }
-
-  #map-canvas, #map_canvas {
-    height: 650px;
-  }
-}
-
 
 
 #map-canvas, #map_canvas {
