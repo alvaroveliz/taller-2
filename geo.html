@@ -52,28 +52,51 @@
                 mapOptions);
 
             // Try HTML5 geolocation
-            if (navigator.geolocation) {
 
-              navigator.geolocation.getCurrentPosition(function(data) {
+            if (localStorage['demoapp.location']) {
+              console.log('SACANDO INFORMACION DE LOCAL STORAGE')
 
-                var pos = new google.maps.LatLng(data.coords.latitude,
-                                                 data.coords.longitude);
+              _location = JSON.parse(localStorage['demoapp.location']);
+              var pos = new google.maps.LatLng(_location.latitude, _location.longitude);
 
-                var infowindow = new google.maps.InfoWindow({
-                  map: map,
-                  position: pos,
-                  content: 'Encontramos la posicion usando HTML5 Geolocation'
-                });
-
-                map.setCenter(pos);
-
-              }, function() {
-                handleNoGeolocation(true);
+              var infowindow = new google.maps.InfoWindow({
+                map: map,
+                position: pos,
+                content: 'Encontramos la posicion usando HTML5 Geolocation'
               });
-            } 
+
+              map.setCenter(pos);
+            }
             else {
-              // Browser doesn't support Geolocation
-              handleNoGeolocation(false);
+              if (navigator.geolocation) {
+
+                console.log('SACANDO INFORMACION DE GEOLOCATION')
+
+                navigator.geolocation.getCurrentPosition(function(data) {
+
+                  locationInfo = { 'longitude' : data.coords.longitude, 'latitude' : data.coords.latitude };
+                  locationInfoString = JSON.stringify(locationInfo);
+                  localStorage['demoapp.location'] = locationInfoString;
+
+                  var pos = new google.maps.LatLng(data.coords.latitude,
+                                                   data.coords.longitude);
+
+                  var infowindow = new google.maps.InfoWindow({
+                    map: map,
+                    position: pos,
+                    content: 'Encontramos la posicion usando HTML5 Geolocation'
+                  });
+
+                  map.setCenter(pos);
+
+                }, function() {
+                  handleNoGeolocation(true);
+                });
+              } 
+              else {
+                // Browser doesn't support Geolocation
+                handleNoGeolocation(false);
+              }
             }
           }
 
@@ -97,7 +120,6 @@
 
           google.maps.event.addDomListener(window, 'load', initialize);
         </script>
-        
       </div>
     </div>
 
