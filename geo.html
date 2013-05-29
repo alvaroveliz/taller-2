@@ -7,6 +7,8 @@
   <link href="components/bootstrap.css/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="css/app.css" rel="stylesheet" >
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+  <script src="components/jquery/jquery.min.js"></script>
+  <script src="db.json"></script>
   <title>Nombre aplicación - Descripción corta</title>
 </head>
 <body>
@@ -34,7 +36,10 @@
 
     <div class="row-fluid" id="map">
       <div class="span12">
-
+        
+        <ul id="list-farmacias">
+          
+        </ul>
         <div id="map-canvas"></div>
         
         <script>
@@ -66,6 +71,23 @@
               });
 
               map.setCenter(pos);
+
+              $.each(db.farmacias, function(key, farmacia){
+
+                if (farmacia.address.geolocation.latitude && farmacia.address.geolocation.longitude) {
+                  markerLatLong = new google.maps.LatLng(farmacia.address.geolocation.latitude, farmacia.address.geolocation.longitude);
+
+                  markerTitle = farmacia.name;
+
+                  var marker = new google.maps.Marker({
+                      position: markerLatLong, 
+                      map: map,
+                      title: markerTitle,
+                  });
+                }
+                
+              });
+
             }
             else {
               if (navigator.geolocation) {
@@ -74,7 +96,14 @@
 
                 navigator.geolocation.getCurrentPosition(function(data) {
 
-                  locationInfo = { 'longitude' : data.coords.longitude, 'latitude' : data.coords.latitude };
+                  date = new Date();
+                  infoDate = date.getTime();
+                  locationInfo = { 
+                    'longitude' : data.coords.longitude, 
+                    'latitude' : data.coords.latitude, 
+                    'date' : infoDate
+                  };
+
                   locationInfoString = JSON.stringify(locationInfo);
                   localStorage['demoapp.location'] = locationInfoString;
 
