@@ -3,27 +3,30 @@ var db = {
     "restaurantes"  : [
         {
             "name" : "Los Chinos Ricos",
-            "type" : "SB",
+            "type" : "CN",
+            "venue"   : "http://m.foursquare.com/venue/4b794461f964a5207af12ee3",
             "address" : {
                 "calle" : "Avenida Brasil 373",
                 "comuna" : "Santiago Centro",
                 "geolocation" : {
                     "latitude" : -33.44043,
                     "longitude" : -70.664847
-                },
+                }
+            },
             "phone" : "2 - 6963778"
-            }
         },
         {
-            "name" : "Cruz Verde #1",
-            "type" : "CV",
+            "name" : "Bella China",
+            "type" : "CN",
+            "venue"   : "http://m.foursquare.com/venue/4c321b897cc0c9b6f3bcef9a",
             "address" : {
-                "line1" : "Mall Plaza Ñuñoa",
+                "calle" : "Ricardo Cumming 315",
                 "geolocation" : {
-                    "latitude" : -33.46528,
-                    "longitude" : -70.597808
+                    "latitude" : -33.440404,
+                    "longitude" : -70.668312
                 }
-            }
+            },
+            "phone" : ""
         },
         {
             "name" : "Salco Brand #1",

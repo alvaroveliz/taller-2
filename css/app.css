@@ -1,8 +1,5 @@
 /* By default, mobile */
 
-.container-narrow {
-  margin: 2%;
-}
 
 header h1#logo {
   font-size: 2em;
@@ -21,8 +18,8 @@ header h1#logo {
   height: 100%;
 }
 #map-canvas {
-	min-width: 320px;
-	min-height: 450px;
+	min-width: 250px;
+	min-height: 350px;
 }
 
 /* Fix para choque entre Google Maps y Bootstrap */

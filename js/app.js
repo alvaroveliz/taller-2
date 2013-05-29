@@ -4,7 +4,7 @@ var map;
           {
             
             var mapOptions = {
-              zoom: 18,
+              zoom: 17,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
@@ -33,12 +33,36 @@ var map;
                   markerLatLong = new google.maps.LatLng(restaurant.address.geolocation.latitude, restaurant.address.geolocation.longitude);
 
                   markerTitle = restaurant.name;
+                  dirTxt = restaurant.address.calle;
+                  venue = restaurant.venue;
 
                   var marker = new google.maps.Marker({
+                      clickable: true,
                       position: markerLatLong,
                       map: map,
-                      title: markerTitle,
-                      content: markerTitle
+                      title: markerTitle
+                  });
+
+                  // Marcadores
+                  
+                  marker.info = new google.maps.InfoWindow({
+                    content: 
+                    '<h2>' + markerTitle + '</h2>' 
+                    + '<br>' 
+                    + '<em>' + dirTxt + '</em>' 
+                    + '<br>' + console.log(markerTitle, dirTxt, venue) 
+                    + '<a href="' + venue + '" target="_blank">4sq</a>'
+                  });
+                  google.maps.event.addListener(marker, 'click', function() {
+                    marker.info.open(map, marker);
+                  });
+
+
+
+                  var infowindow = new google.maps.InfoWindow({
+                    map: map,
+                    position: pos,
+                    content: 'Encontramos la posicion usando HTML5 Geolocation',
                   });
                 }
               });
