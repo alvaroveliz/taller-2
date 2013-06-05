@@ -1,0 +1,32 @@
+var db = {
+  "eventos" : [
+    {
+      "mensaje" : "Hoy fui al mall y me comi un mosquito",
+      "foto" : {
+        "nombre" : "Foto1.JPG",
+        "url" : "/fotos/Foto1.JPG",
+        "formato" : "jpg"
+      },
+      "fecha" : "21 de Mayo de 2013",
+      "me_gusta" : 4,
+      "autor" : {
+        "nombre" : "José Luis Amigo",
+        "url" : "http://facebook.com/coteloser"
+      }
+    },
+    {
+      "mensaje" : "Hoy fui al mall y me comi un mosquito",
+      "foto" : {
+        "nombre" : "Foto1.JPG",
+        "url" : "/fotos/Foto1.JPG",
+        "formato" : "jpg"
+      },
+      "fecha" : "21 de Mayo de 2013",
+      "me_gusta" : 4,
+      "autor" : {
+        "nombre" : "José Luis Amigo",
+        "url" : "http://facebook.com/coteloser"
+      }
+    }
+  ]
+};

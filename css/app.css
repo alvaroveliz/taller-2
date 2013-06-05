@@ -18,6 +18,16 @@ header h1#logo {
   font-size: 1.2em;
 }
 
+#events .event {
+  background: #EEE;
+  margin: 20px 0;
+  box-shadow: 0 5px 4px #666;
+}
+
+#events .event .event-info, #events .event .event-thumbnail {
+  padding: 20px;
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 }
