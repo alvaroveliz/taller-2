@@ -29,38 +29,43 @@ var db = {
             "phone" : ""
         },
         {
-            "name" : "Salco Brand #1",
-            "type" : "SB",
+            "name" : "Sui - Hwa",
+            "type" : "CN",
+            "venue" : "http://m.foursquare.com/venue/4d274830849f3704f6806741",
             "address" : {
-                "line1" : "",
+                "line1" : "Ricardo Cumming 67",
                 "line2" : "",
                 "geolocation" : {
-                    "latitude" : 0.0,
-                    "longitude" : 0.0
+                    "latitude" : -33.445117,
+                    "longitude" : -70.667566
                 }
-            }
+            },
+            "phone" : "+56 2 26953399"
         },
         {
-            "name" : "Ahumada #2",
-            "type" : "AH",
+            "name" : "Chang Wha",
+            "type" : "CN",
+            "venue" : "http://m.foursquare.com/venue/4b7835fdf964a520a2bc2ee3",
             "address" : {
-                "line1" : "",
+                "line1" : "Catedral 2135",
                 "line2" : "",
                 "geolocation" : {
-                    "latitude" : 0.0,
-                    "longitude" : 0.0
+                    "latitude" : -33.438922,
+                    "longitude" : -70.6663
                 }
-            }
+            },
+            "phone" : "+56 2 26960500"
         },
         {
-            "name" : "Salco Brand #2",
-            "type" : "SB",
+            "name" : "Aiwha",
+            "type" : "CN",
+            "venue" : "http://foursquare.com/venue/4bae968bf964a520ddc33be3",
             "address" : {
-                "line1" : "",
+                "line1" : "Pasaje Agustín Edwards 2024",
                 "line2" : "",
                 "geolocation" : {
-                    "latitude" : 0.0,
-                    "longitude" : 0.0
+                    "latitude" : -33.439383,
+                    "longitude" : -70.665159
                 }
             }
         }
