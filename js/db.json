@@ -131,6 +131,40 @@ var db = {
                     "longitude" : -70.603703
                 }
             }
+        },
+        {
+            "name" : "Kong Lung",
+            "type" : "CN",
+            "venue" : {
+                "id" : "4c80552ad92ea093e83e3772",
+                "mobile_url" : "http://foursquare.com/venue/4c80552ad92ea093e83e3772"
+            },
+            "address" : {
+                "calle" : "Av. Irarrázaval 3794",
+                "comuna" : "Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.455376,
+                    "longitude" : -70.583259
+                }
+            },
+            "phone" : "+56 2 22090661"
+        },
+        {
+            "name" : "Lian Wa",
+            "type" : "CN",
+            "venue" : {
+                "id" : "4be9f245415e20a19681e4bb",
+                "mobile_url" : "http://foursquare.com/venue/4be9f245415e20a19681e4bb"
+            },
+            "address" : {
+                "calle" : "Simón Bolívar 3751, C",
+                "comuna" : "Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.44855,
+                    "longitude" : -70.591547
+                }
+            },
+            "phone" : "+56 2 22090661"
         }
     ],
     "hospitales" : [

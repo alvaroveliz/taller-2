@@ -115,7 +115,7 @@ function initialize()
           };
 
           locationInfoString = JSON.stringify(locationInfo);
-          localStorage['demoapp.location'] = locationInfoString;
+          localStorage['kuaizi.location'] = locationInfoString;
 
           var pos = new google.maps.LatLng(data.coords.latitude,
                                            data.coords.longitude);
