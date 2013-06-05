@@ -23,9 +23,6 @@
           <li class="active">
             <a href="encuentra.html">Encuentra</a>
           </li>
-          <!--  <li>
-            <a href="#">Contacto</a>
-          </li> -->
         </ul>
       </nav>
       <h1 id="logo" class="muted">Kuaizi</h3>
@@ -42,9 +39,18 @@
 
 	<div class="row-fluid" id="features">
 
-		<div id="map-canvas"></div>
-    <button onclick="localStorage.clear(); console.log('localStorage Vacío')"> Limpiar localStorage</button>
-    <button onclick="console.log(localStorage);">Console.log localStorage</button>
+    <div id="map" class="span8">
+      <div id="map-canvas"></div>
+      <button onclick="localStorage.clear(); console.log('localStorage Vacío')"> Limpiar localStorage</button>
+      <button onclick="console.log(localStorage);">Console.log localStorage</button>  
+    </div>
+
+    <div id="map-venues" class="span4">
+      <h4>Lugares encontrados:</h4>
+      <ul id="venue-list" class="nav nav-pills nav-stacked">
+      </ul>
+    </div>
+		
 		
 	</div><!--.row-fluid-->
 

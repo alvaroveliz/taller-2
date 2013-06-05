@@ -4,7 +4,10 @@ var db = {
         {
             "name" : "Los Chinos Ricos",
             "type" : "CN",
-            "venue"   : "http://m.foursquare.com/venue/4b794461f964a5207af12ee3",
+            "venue"   : {
+                "id" : "4b794461f964a5207af12ee3",
+                "mobile_url" : "http://m.foursquare.com/venue/4b794461f964a5207af12ee3"
+            },
             "address" : {
                 "calle" : "Avenida Brasil 373",
                 "comuna" : "Santiago Centro",
@@ -18,7 +21,10 @@ var db = {
         {
             "name" : "Bella China",
             "type" : "CN",
-            "venue"   : "http://m.foursquare.com/venue/4c321b897cc0c9b6f3bcef9a",
+            "venue"   : {
+                "id" : "4c321b897cc0c9b6f3bcef9a",
+                "mobile_url" : "http://m.foursquare.com/venue/4c321b897cc0c9b6f3bcef9a"
+            },
             "address" : {
                 "calle" : "Ricardo Cumming 315",
                 "geolocation" : {
@@ -31,10 +37,13 @@ var db = {
         {
             "name" : "Sui - Hwa",
             "type" : "CN",
-            "venue" : "http://m.foursquare.com/venue/4d274830849f3704f6806741",
+            "venue" : {
+                "id" : "4d274830849f3704f6806741",
+                "mobile_url" : "http://m.foursquare.com/venue/4d274830849f3704f6806741"
+            },
             "address" : {
-                "line1" : "Ricardo Cumming 67",
-                "line2" : "",
+                "calle" : "Ricardo Cumming 67",
+                "comuna" : "",
                 "geolocation" : {
                     "latitude" : -33.445117,
                     "longitude" : -70.667566
@@ -45,10 +54,13 @@ var db = {
         {
             "name" : "Chang Wha",
             "type" : "CN",
-            "venue" : "http://m.foursquare.com/venue/4b7835fdf964a520a2bc2ee3",
+            "venue" : {
+                "id" : "4b7835fdf964a520a2bc2ee3",
+                "mobile_url" : "http://m.foursquare.com/venue/4b7835fdf964a520a2bc2ee3"
+            },
             "address" : {
-                "line1" : "Catedral 2135",
-                "line2" : "",
+                "calle" : "Catedral 2135",
+                "comuna" : "",
                 "geolocation" : {
                     "latitude" : -33.438922,
                     "longitude" : -70.6663
@@ -59,10 +71,13 @@ var db = {
         {
             "name" : "Aiwha",
             "type" : "CN",
-            "venue" : "http://foursquare.com/venue/4bae968bf964a520ddc33be3",
+            "venue" : {
+                "id" : "4bae968bf964a520ddc33be3",
+                "mobile_url" : "http://foursquare.com/venue/4bae968bf964a520ddc33be3"
+            },
             "address" : {
-                "line1" : "Pasaje Agustín Edwards 2024",
-                "line2" : "",
+                "calle" : "Pasaje Agustín Edwards 2024",
+                "comuna" : "",
                 "geolocation" : {
                     "latitude" : -33.439383,
                     "longitude" : -70.665159
