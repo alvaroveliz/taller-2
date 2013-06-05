@@ -10,12 +10,13 @@ function initialize()
 {
   
   var mapOptions = {
-    zoom: 17,
+    zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+
 
   // Try HTML5 geolocation
 
@@ -27,6 +28,13 @@ function initialize()
 
 
     map.setCenter(pos);
+
+    var marker = new google.maps.Marker({
+      position: pos,
+      icon: 'img/pacman.png',
+      map: map,
+      title:"You are here!"
+  });
 
     $.each(db.restaurantes, function(key, restaurant){
       // Agregamos el restoran a la lista

@@ -83,6 +83,54 @@ var db = {
                     "longitude" : -70.665159
                 }
             }
+        },
+        {
+            "name" : "San Kong",
+            "type" : "CN",
+            "venue" : {
+                "id" : "#",
+                "mobile_url" : "http://foursquare.com/venue/#"
+            },
+            "address" : {
+                "calle" : "Av. Chile España 140",
+                "comuna" : "Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.452759,
+                    "longitude" : -70.59829
+                }
+            }
+        },
+        {
+            "name" : "Lian Xing",
+            "type" : "CN",
+            "venue" : {
+                "id" : "4b63678cf964a52068772ae3",
+                "mobile_url" : "http://foursquare.com/venue/4b63678cf964a52068772ae3"
+            },
+            "address" : {
+                "calle" : "Av. Chile España 480",
+                "comuna" : "Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.4506,
+                    "longitude" : -70.598019
+                }
+            }
+        },
+        {
+            "name" : "Fu Shi",
+            "type" : "CN",
+            "venue" : {
+                "id" : "4b8162d5f964a520e9a230e3",
+                "mobile_url" : "http://foursquare.com/venue/4b8162d5f964a520e9a230e3"
+            },
+            "address" : {
+                "calle" : "Simón Bolívar 3701",
+                "comuna" : "Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.454306,
+                    "longitude" : -70.603703
+                }
+            }
         }
     ],
     "hospitales" : [
