@@ -164,7 +164,24 @@ var db = {
                     "longitude" : -70.591547
                 }
             },
-            "phone" : "+56 2 22090661"
+            "phone" : ""
+        },
+        {
+            "name" : "Xiong Mao",
+            "type" : "CN",
+            "venue" : {
+                "id" : "#",
+                "mobile_url" : "http://foursquare.com/venue/#"
+            },
+            "address" : {
+                "calle" : "Av Irarrázaval 3470",
+                "comuna" : "Ñuñoa",
+                "geolocation" : {
+                    "latitude" : -33.455255,
+                    "longitude" : -70.594693
+                }
+            },
+            "phone" : ""
         }
     ],
     "hospitales" : [
