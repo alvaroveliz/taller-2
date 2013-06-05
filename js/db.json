@@ -11,22 +11,55 @@ var db = {
       "me_gusta" : 4,
       "autor" : {
         "nombre" : "José Luis Amigo",
-        "url" : "http://facebook.com/coteloser"
+        "url" : "http://facebook.com/cotelo"
+      },
+      "ubicacion":{
+        "pais": "Chile",
+        "Ciudad": "Santiago",
+        "Comuna":"Santiago"
       }
+
     },
     {
-      "mensaje" : "Hoy fui al mall y me comi un mosquito",
+      "mensaje" : "Hoy fui a comprar pan y paf casi..",
       "foto" : {
-        "nombre" : "Foto1.JPG",
-        "url" : "/fotos/Foto1.JPG",
+        "nombre" : "Foto2.JPG",
+        "url" : "/fotos/Fot2.JPG",
         "formato" : "jpg"
       },
-      "fecha" : "21 de Mayo de 2013",
-      "me_gusta" : 4,
+      "fecha" : "22 de Abril de 2013",
+      "me_gusta" : 2,
       "autor" : {
         "nombre" : "José Luis Amigo",
-        "url" : "http://facebook.com/coteloser"
+        "url" : "http://facebook.com/cotelo"
+      },
+      "ubicacion":{
+        "pais": "Chile",
+        "Ciudad": "Santiago",
+        "Comuna":"Estación Central"
       }
+
+    },
+    {
+      "mensaje" : "hermosa foto",
+      "foto" : {
+        "nombre" : "Foto3.JPG",
+        "url" : "/fotos/Fot3.JPG",
+        "formato" : "jpg"
+      },
+      "fecha" : "20 de Julio de 2013",
+      "me_gusta" : 10,
+      "autor" : {
+        "nombre" : "Marilyn Rojas",
+        "url" : "http://facebook.com/isabel"
+      },
+      "ubicacion":{
+        "pais": "Chile",
+        "Ciudad": "Santiago",
+        "Comuna":"Independencia"
+      }
+
     }
   ]
+
 };
