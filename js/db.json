@@ -3,8 +3,8 @@ var db = {
     {
       "mensaje" : "Hoy fui al mall y me comi un mosquito",
       "foto" : {
-        "nombre" : "Foto1.JPG",
-        "url" : "/fotos/Foto1.JPG",
+        "nombre" : "Mi niña",
+        "url" : "bootstrap/img/mi-nina.jpg",
         "formato" : "jpg"
       },
       "fecha" : "21 de Mayo de 2013",
@@ -23,8 +23,8 @@ var db = {
     {
       "mensaje" : "Hoy fui a comprar pan y paf casi..",
       "foto" : {
-        "nombre" : "Foto2.JPG",
-        "url" : "/fotos/Fot2.JPG",
+        "nombre" : "marilyn",
+        "url" : "bootstrap/img/marilyn.JPG",
         "formato" : "jpg"
       },
       "fecha" : "22 de Abril de 2013",
@@ -43,8 +43,8 @@ var db = {
     {
       "mensaje" : "hermosa foto",
       "foto" : {
-        "nombre" : "Foto3.JPG",
-        "url" : "/fotos/Fot3.JPG",
+        "nombre" : "Imagen 2",
+        "url" : "bootstrap/img/img2.jpg",
         "formato" : "jpg"
       },
       "fecha" : "20 de Julio de 2013",

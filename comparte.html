@@ -6,6 +6,11 @@
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="css/app.css" rel="stylesheet" >
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/db.json"></script>
+
   <title>EmbarazadApp - Comparte eventos de tu embarazo</title>
 </head>
 <body>
@@ -27,63 +32,11 @@
     <div class="row-fluid">
       <div class="span8 offset2">
         <div class="span12">
-          <textarea type="text" class="input-block-level" placeholder="Compartir"></textarea>
+          <textarea type="text" class="input-block-level" placeholder="Compartir" id="compartir-texto"></textarea>
           <a href="" class="pull-left"><span class="icon-camera"></span> Agregar foto</a>
-          <button class="btn pull-right">Compartir</button>
+          <a class="btn pull-right" id="compartir">Compartir</a>
         </div>
         <div id="events">
-          <div id="event-1" class="event span12">
-            <div class="event-thumbnail span4">
-              <img src="http://placekitten.com/g/200/200" class="img-polaroid">
-            </div>
-            <div class="event-info span8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quas numquam soluta culpa reiciendis nobis repellat animi dicta accusamus ipsam molestias itaque omnis consequuntur debitis rerum commodi fuga quam adipisci officia porro perferendis similique facere repellendus sit maiores optio eveniet nulla assumenda modi! A, excepturi.</p>
-              <hr>
-              <div class="event-buttons pull-right">
-                <a href="" class="btn-link"><span class="icon-heart"></span> Me gusta</a>
-                <a href="" class="btn-link"><span class="icon-plus"></span> Ver más</a>
-              </div>
-            </div>
-          </div>
-          <div id="event-2" class="event span12">
-            <div class="event-thumbnail span4">
-              <img src="http://placedog.com/g/200/200" class="img-polaroid">
-            </div>
-            <div class="event-info span8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quas numquam soluta culpa reiciendis nobis repellat animi dicta accusamus ipsam molestias itaque omnis consequuntur debitis rerum commodi fuga quam adipisci officia porro perferendis similique facere repellendus sit maiores optio eveniet nulla assumenda modi! A, excepturi.</p>
-              <hr>
-              <div class="event-buttons pull-right">
-                <a href="" class="btn-link"><span class="icon-heart"></span> Me gusta</a>
-                <a href="" class="btn-link"><span class="icon-plus"></span> Ver más</a>
-              </div>
-            </div>
-          </div>
-          <div id="event-3" class="event span12">
-            <div class="event-thumbnail span4">
-              <img src="http://placekitten.com/200/200" class="img-polaroid">
-            </div>
-            <div class="event-info span8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quas numquam soluta culpa reiciendis nobis repellat animi dicta accusamus ipsam molestias itaque omnis consequuntur debitis rerum commodi fuga quam adipisci officia porro perferendis similique facere repellendus sit maiores optio eveniet nulla assumenda modi! A, excepturi.</p>
-              <hr>
-              <div class="event-buttons pull-right">
-                <a href="" class="btn-link"><span class="icon-heart"></span> Me gusta</a>
-                <a href="" class="btn-link"><span class="icon-plus"></span> Ver más</a>
-              </div>
-            </div>
-          </div>
-          <div id="event-4" class="event span12">
-            <div class="event-thumbnail span4">
-              <img src="http://placedog.com/200/200" class="img-polaroid">
-            </div>
-            <div class="event-info span8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, quas numquam soluta culpa reiciendis nobis repellat animi dicta accusamus ipsam molestias itaque omnis consequuntur debitis rerum commodi fuga quam adipisci officia porro perferendis similique facere repellendus sit maiores optio eveniet nulla assumenda modi! A, excepturi.</p>
-              <hr>
-              <div class="event-buttons pull-right">
-                <a href="" class="btn-link"><span class="icon-heart"></span> Me gusta</a>
-                <a href="" class="btn-link"><span class="icon-plus"></span> Ver más</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
