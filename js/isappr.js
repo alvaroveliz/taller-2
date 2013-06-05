@@ -1,5 +1,73 @@
 var map;
 
+function addToList(text, icon)
+{
+	$('#map-results ul').append('<li><a href=""><img src="'+icon+'" width="24"> '+text+'</a></li>')
+}
+
+function loadMarkers()
+{
+
+	// Cargar farmacias
+	$.each(db.farmacias, function(key, farmacia){
+		addToList(farmacia.nombre, 'http://pueblojoseignacio.com/wp-content/uploads/leaflet-maps-marker-icons/drugstore.png');
+
+		position = new google.maps.LatLng(farmacia.coordenadas.latitud, farmacia.coordenadas.longitud);
+
+		var marker = new google.maps.Marker({
+	  	clickable: true,
+	  	position: position,
+	  	map: map,
+	  	title: farmacia.nombre,
+	  	icon : "http://pueblojoseignacio.com/wp-content/uploads/leaflet-maps-marker-icons/drugstore.png"
+	  });
+
+    // Marcadores
+    marker.info = new google.maps.InfoWindow({
+      content:
+      '<h2>' + farmacia.nombre + '</h2>'
+      + '<br>'
+      + '<em>' + farmacia.direccion + '</em>'
+    });
+
+
+		google.maps.event.addListener(marker, 'click', function() {
+	    marker.info.open(map, marker);
+	  });
+	});
+
+	$.each(db.hospitales, function(key, hospital){
+		addToList(hospital.nombre, 'http://www.patientpak.com/gfx/icons/icon-hospital.gif');
+
+		position = new google.maps.LatLng(hospital.coordenadas.latitud, hospital.coordenadas.longitud);
+
+		type = 'hospital';
+		iconType = (type == 'hospital') ? 'http://www.patientpak.com/gfx/icons/icon-hospital.gif' : 'otra foto';
+
+		var marker = new google.maps.Marker({
+	  	clickable: true,
+	  	position: position,
+	  	map: map,
+	  	title: hospital.nombre,
+	  	icon : iconType
+	  });
+
+    // Marcadores
+    marker.info = new google.maps.InfoWindow({
+      content:
+      '<h2>' + hospital.nombre + '</h2>'
+      + '<br>'
+      + '<em>' + hospital.direccion + '</em>'
+    });
+
+
+		google.maps.event.addListener(marker, 'click', function() {
+	    marker.info.open(map, marker);
+	  });
+	});
+
+}
+
 function initialize() 
 {
 	
@@ -14,23 +82,17 @@ function initialize()
 	// Try HTML5 geolocation
 
 	if (localStorage['demoapp.location']) {
-		console.log('SACANDO INFORMACION DE LOCAL STORAGE')
-
+		
 		_location = JSON.parse(localStorage['demoapp.location']);
 		var pos = new google.maps.LatLng(_location.latitude, _location.longitude);
 
-		var infowindow = new google.maps.InfoWindow({
-			map: map,
-			position: pos,
-			content: 'Encontramos la posicion (POR 2DA O MÁS VECES) usando HTML5 Geolocation'
-		});
-
 		map.setCenter(pos);
+
+		// cargamos los marcadores
+		loadMarkers();
 	}
 	else {
 		if (navigator.geolocation) {
-
-			console.log('SACANDO INFORMACION DE GEOLOCATION')
 
 			navigator.geolocation.getCurrentPosition(function(data) {
 
@@ -40,12 +102,6 @@ function initialize()
 
 				var pos = new google.maps.LatLng(data.coords.latitude,
 																				 data.coords.longitude);
-
-				var infowindow = new google.maps.InfoWindow({
-					map: map,
-					position: pos,
-					content: 'Encontramos la posicion (POR 1ERA VEZ) usando HTML5 Geolocation'
-				});
 
 				map.setCenter(pos);
 

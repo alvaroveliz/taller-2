@@ -1,46 +1,71 @@
-{
+var db = {
 	"farmacias": [
 		{
 			"nombre": "Farmacia Juanita",
-			"Dirección humana": "",
-			"Coordenadas": "-33.4588,-70.600937"
+			"direccion": "",
+			"comuna" : "ñuñoa",
+			"coordenadas": { 
+				"latitud" : -33.4588,
+				"longitud" : -70.600937 
+			}
 		},
 		{
 			"nombre": "Farmacia Pedrito",
-			"Dirección humana": "Pedro de Valdivia 4135-4211, santiago, chile",
-			"Coordenadas": "-33.460536,-70.6060232"
+			"direccion": "Pedro de Valdivia 4135-4211, santiago, chile",
+			"coordenadas": { 
+				"latitud" : -33.460536,
+				"longitud" : -70.6060232
+			}
 		},
 		{
 			"nombre": "Botica Juanito",
-			"Dirección humana": "Irarrázaval 2296-2510, santiago, chile",
-			"Coordenadas": "-33.45393,-70.607182"
+			"direccion": "Irarrázaval 2296-2510, santiago, chile",
+			"coordenadas": { 
+				"latitud" : -33.45393,
+				"longitud" : -70.607182
+			}
 		},
 		{
 			"nombre": "Farmacia Cruz Verde",
-			"Dirección humana": "José Manuel Infante 2742-2850, santiago, chile",
-			"Coordenadas": "-33.455792,-70.618125"
+			"direccion": "José Manuel Infante 2742-2850, santiago, chile",
+			"coordenadas": { 
+				"latitud" : -33.455792,
+				"longitud" : -70.618125
+			}
 		},
 		{
 			"nombre": "Farmacias Ahumada",
-			"Dirección humana": "Pedro de Valdivia 2613-2687, santiago, chile",
-			"Coordenadas": "-33.446446,-70.60598"
+			"direccion": "Pedro de Valdivia 2613-2687, santiago, chile",
+			"coordenadas": { 
+				"latitud" : -33.446446,
+				"longitud" : -70.60598
+			}
 		}
 	],
 	"hospitales": [
 		{
 			"nombre": "Hospital Juanita Aguirre",
-			"Dirección humana": "Condell 1283-1397, Santiago, Chile",
-			"Coordenadas": "-33.446267,-70.626043"
+			"direccion": "Condell 1283-1397, Santiago, Chile",
+			"coordenadas": { 
+				"latitud" : -33.446267,
+				"longitud" : -70.626043
+			}
 		},
 		{
 			"nombre": "Clínica Escúchame",
-			"Dirección humana": "Vicuña Mackenna 1490-1594, santiago, chile",
-			"Coordenadas": "-33.462541,-70.627759"	
+			"direccion": "Vicuña Mackenna 1490-1594, santiago, chile",
+			"coordenadas": { 
+				"latitud" : -33.462541,
+				"longitud" : -70.627759	 
+			}
 		},
 		{
 			"nombre": "Clínica La Verdad",
-			"Dirección humana": "Sargento Aldea 813-899, santiago, chile",
-			"Coordenadas": "-33.468323,-70.645376"	
+			"direccion": "Sargento Aldea 813-899, santiago, chile",
+			"coordenadas": { 
+				"latitud" : -33.468323,
+				"longitud" : -70.645376 
+			}
 		}
 	]
 }

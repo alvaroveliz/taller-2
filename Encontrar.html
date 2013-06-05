@@ -7,7 +7,9 @@
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="css/app.css" rel="stylesheet" >
   <title>Isappr - Encuentra farmacias y hospitales cerca tuyo que tienen convenio con tu isapre</title>
+  <script src="js/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+  <script src="base.json"></script>
   <script src="js/isappr.js"></script>
 </head>
 <body> 
@@ -32,10 +34,19 @@
 
     <hr>
 
-    <div id="map-canvas"></div>
+    <div id="results" class="row-fluid">
+      <div id="map" class="span9">
+        <div id="map-canvas"></div>    
+      </div>
+      <div id="map-results" class="span3">
+        <ul class="nav nav-pills nav-stacked">
+        </ul>
+      </div>
+    </div>
+    
     <hr>
 
-<button  onclick="localStorage.clear(); console.log('se vació el storage')">Limpiar Storage</button>
+    <button  onclick="localStorage.clear(); console.log('se vació el storage')">Limpiar Storage</button>
 
     <div class="footer">
       <p>&copy; Taller HTML5 2013</p>
